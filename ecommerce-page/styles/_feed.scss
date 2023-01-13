@@ -1,0 +1,57 @@
+$feed-bg: dimgray;
+$distak-color: yellow;
+$shadow: rgba(42, 230, 13, 0.65);
+$dark-bg: #000;
+$background-pattern: rgb(11, 191, 110);
+
+@mixin boxshadow($color) {
+  box-shadow: 10px 11px 13px -4px $color;
+}
+
+@mixin distak-text($bool) {
+  text-transform: uppercase;
+  color: lighten($distak-color, 50);
+}
+
+@mixin screen-mode($val) {
+  @if $val == darkmode {
+    background-color: $dark-bg;
+  } @else if $val == intermediate {
+    background-color: $feed-bg;
+  } @else {
+    background-color: $background-pattern;
+  }
+}
+
+.dimentions {
+  width: 450px;
+  height: 950px;
+}
+
+.main-content {
+  @extend .dimentions;
+  width: 800px;
+  @include screen-mode(darkmode);
+  @include boxshadow(red);
+
+  p {
+    @include boxshadow($shadow);
+  }
+
+  &--distak {
+    @include distak-text(true);
+  }
+}
+@for $i from 1 through 5 {
+  .text-#{$i} {
+    font-size: 15px * $i;
+  }
+}
+
+$colors: ( blue, red,green);
+
+@each $color in $colors {
+  .#{$color}-cachorro {
+    color: $color;
+  }
+}

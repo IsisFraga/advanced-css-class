@@ -1,0 +1,29 @@
+$main-text: green;
+$disabled-button: #8f8b8b;
+$light-text: rgb(230, 216, 216);
+
+.search-bar {
+  background-color: antiquewhite;
+
+  &__button {
+    background-color: red;
+    width: 150px;
+    height: 50px;
+
+    &--active {
+      background-color: rgb(207, 118, 16);
+      &:hover {
+        background-color: aqua;
+      }
+    }
+  }
+
+  &--disabled {
+    background-color: $disabled-button;
+    color: $light-text;
+  }
+
+  p {
+    color: $main-text;
+  }
+}

@@ -1,1 +1,81 @@
-body{background-color:#a9a9a9}/*# sourceMappingURL=main.css.map */
+body {
+  background-color: darkgray;
+  max-width: 1440px;
+  padding: 0 50px;
+}
+
+p {
+  color: rgb(218, 192, 192);
+}
+
+.search-bar {
+  background-color: antiquewhite;
+}
+.search-bar__button {
+  background-color: red;
+  width: 150px;
+  height: 50px;
+}
+.search-bar__button--active {
+  background-color: rgb(207, 118, 16);
+}
+.search-bar__button--active:hover {
+  background-color: aqua;
+}
+.search-bar--disabled {
+  background-color: #8f8b8b;
+  color: rgb(230, 216, 216);
+}
+.search-bar p {
+  color: green;
+}
+
+.dimentions, .main-content {
+  width: 450px;
+  height: 950px;
+}
+
+.main-content {
+  width: 800px;
+  background-color: #000;
+  box-shadow: 10px 11px 13px -4px red;
+}
+.main-content p {
+  box-shadow: 10px 11px 13px -4px rgba(42, 230, 13, 0.65);
+}
+.main-content--distak {
+  text-transform: uppercase;
+  color: white;
+}
+
+.text-1 {
+  font-size: 15px;
+}
+
+.text-2 {
+  font-size: 30px;
+}
+
+.text-3 {
+  font-size: 45px;
+}
+
+.text-4 {
+  font-size: 60px;
+}
+
+.text-5 {
+  font-size: 75px;
+}
+
+.blue-cachorro {
+  color: blue;
+}
+
+.red-cachorro {
+  color: red;
+}
+
+.green-cachorro {
+  color: green;
+}/*# sourceMappingURL=main.css.map */
